@@ -1,3 +1,26 @@
 body {
   background: url(/assets/bgnoise.png);
+  font-family: helvetica neue, helvetica, arial, sans-serif;
+  color: #4d4d4d;
+}
+
+header {
+  #logo_link {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  #session_corner {
+    float: right;
+    padding-top: 15px;
+    a {
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #666;
+      text-shadow: 0 1px #fff;
+      margin-left: 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
