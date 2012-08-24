@@ -36,3 +36,10 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# Gems used for views
+gem 'simple_form', ">= 2.0.1"
+gem 'haml', ">= 3.1.3"
+gem 'rails-backbone'
+gem 'haml_assets', git: "https://github.com/infbio/haml_assets.git"
+gem 'ejs'
