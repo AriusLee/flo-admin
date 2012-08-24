@@ -1,0 +1,17 @@
+!!! 5
+%html
+%head
+  %title Admin Panel
+  = stylesheet_link_tag    "application", :media => "all"
+  <script src="/modernizr-2.5.3.min.js"></script>
+  = csrf_meta_tags
+%body
+  #wrapper
+    .container
+      = render partial: "partial/header"
+      #main
+        = yield
+      = render partial: "partial/footer"
+  = javascript_include_tag "application"
+  = yield :javascript
+
