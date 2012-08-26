@@ -12,4 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require scrollspy
 //= require_tree .
+
+$(document).ready(function() {
+  $('nav').hover(function() {
+    $('#content_pane').toggleClass('expanded');
+  });
+  
+  $('#nav_wrapper').scrollspy({
+    min: 30,
+    max: 10000,
+    onEnter: function(element, position) {
+      $('#nav_wrapper').addClass('fixed_cage');
+    },
+    onLeave: function(element, position) {
+      $('#nav_wrapper').removeClass('fixed_cage');
+    }
+  });
+});
