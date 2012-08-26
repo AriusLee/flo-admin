@@ -10,7 +10,9 @@
     .container
       = render partial: "partial/header"
       #main
-        = yield
+        = render partial: "partial/nav"
+        #content_pane
+          = yield
       = render partial: "partial/footer"
   = javascript_include_tag "application"
   = yield :javascript
