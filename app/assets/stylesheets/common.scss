@@ -2,6 +2,7 @@ body {
   background: url(/assets/bgnoise.png);
   font-family: helvetica neue, helvetica, arial, sans-serif;
   color: #4d4d4d;
+  font-weight: 200;
 }
 
 header {
@@ -41,13 +42,45 @@ header {
       }
       a {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         cursor: pointer;
         img, span {
           vertical-align: middle;
         }
-        img {
-          margin-right: 10px;
+        span.nav_icon {
+          margin-right: 20px;
+          width: 36px;
+          height: 36px;
+          opacity: 0.6;
+          background-position: 0 0;
+        }
+        span.nav_icon.home {
+          background: url(/assets/icons/home.png) no-repeat;
+        }
+        span.nav_icon.inbox {
+          background: url(/assets/icons/inbox.png) no-repeat;
+        }
+        span.nav_icon.blog {
+          background: url(/assets/icons/blog.png) no-repeat;
+        }
+        span.nav_icon.setting {
+          background: url(/assets/icons/setting.png) no-repeat;
+        }
+        span.nav_icon.item {
+          background: url(/assets/icons/item.png) no-repeat;
+        }
+        span.nav_caption {
+          color: #999;
+          text-shadow: 0 1px #fff;
+          letter-spacing: 1px;
+        }
+      }
+      a:hover, a.current {
+        span.nav_icon {
+          background-position: 0 -60px;
+        }
+        span.nav_caption {
+          color: #4d4d4d;
         }
       }
     }
