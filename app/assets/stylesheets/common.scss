@@ -23,28 +23,30 @@ header {
       background-position: 0 0;
       cursor: pointer;
       margin-left: 5px;
-      opacity: 0.75;
-      -webkit-transition: opacity 0.2s;
+      background-color: #eee !important;
+      border: 1px solid #ccc;
+      padding: 2px;
+      box-shadow: 0 1px 0 0 #fff;
+      border-radius: 2px;
       &.new_item {
-        background: url(/assets/icons/new-item.png) no-repeat;
+        background: url(/assets/icons/new-item.png) no-repeat center center;
+        background-position: 3px center;
       }
       &.new_blog {
-        background: url(/assets/icons/new-blog.png) no-repeat;
+        background: url(/assets/icons/new-blog.png) no-repeat center center;
       }
       &:hover {
-        background-position: 0 -48px;
-        opacity: 1;
+        border: 1px solid #868686;
       }
     }
     
   }
   #session_corner {
     float: right;
-    padding-top: 15px;
+    padding-top: 18px;
     a {
       font-size: 15px;
-      text-transform: uppercase;
-      color: #666;
+      color: #868686;
       text-shadow: 0 1px #fff;
       margin-left: 15px;
       &:hover {
