@@ -6,9 +6,37 @@ body {
 }
 
 header {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  clear: both;
   #logo_link {
     font-size: 42px;
     font-weight: bold;
+  }
+  #new_element_corner {
+    float: right;
+    padding-top: 10px;
+    margin-right: 5px;
+    a.new_link {
+      width: 28px;
+      height: 28px;
+      background-position: 0 0;
+      cursor: pointer;
+      margin-left: 5px;
+      opacity: 0.75;
+      -webkit-transition: opacity 0.2s;
+      &.new_item {
+        background: url(/assets/icons/new-item.png) no-repeat;
+      }
+      &.new_blog {
+        background: url(/assets/icons/new-blog.png) no-repeat;
+      }
+      &:hover {
+        background-position: 0 -48px;
+        opacity: 1;
+      }
+    }
+    
   }
   #session_corner {
     float: right;
