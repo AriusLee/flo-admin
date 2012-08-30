@@ -1,8 +1,39 @@
 #page_header
-  %h1
-    %span.title_icon.home
-    Dashboard
+  %h1 Dashboard
   
 #page_body
+  %h2 Welcome John
+  %p What would you like to do?
+  
+  #action_row
+    %a
+      = image_tag "icons/new-blog.png"
+      %p Write an article
+    %a
+      = image_tag "icons/new-item.png"
+      %p Upload an item
+    %a
+      = image_tag "icons/new-item.png"
+      %p Manage messages
+      
+  .overview_cage
+    %h3 New messages
+    %table.message_table
+      %tr
+        %td.sender Arius Lee
+        %td.message
+          %p <b>Subject</b> - loerem ipsum dolar sit amet
+        %td.date
+          10:35am
+      %tr
+        %td.sender Arius Lee
+        %td.message
+          %p <b>Subject</b> - loerem ipsum dolar sit amet
+        %td.date
+          10:35am
+      
+  .overview_cage
+    %h3 Latest Item
+      
 
 #page_footer
